@@ -75,6 +75,7 @@ export default function App() {
     () => {
 
       let tween2 = gsap.to(".scroll2", { top: 0, opacity: 1, duration: 2, delay: "500ms" }),
+        // @ts-ignore
         st2 = ScrollTrigger.create({
           trigger: ".second-section",
           start: "top center",
@@ -83,6 +84,7 @@ export default function App() {
           toggleActions: "play reset play reset"
         });
       let tween3 = gsap.to(".scroll3", { top: 0, opacity: 1, duration: 2, delay: "500ms" }),
+        // @ts-ignore
         st3 = ScrollTrigger.create({
           trigger: ".third-section",
           start: "top center",
@@ -104,6 +106,7 @@ export default function App() {
       tl.to(".grid-d4", {
         x: "-=2000", duration: 40, repeat: -1, repeatRefresh: true, overwrite: "auto", ease: "none", runBackwards: true,
       }, 0)
+      // @ts-ignore
       let st4 = ScrollTrigger.create({
         trigger: ".second-bridge",
         start: "top center",
