@@ -1,0 +1,42 @@
+{
+  "1": [{ "url": "../src/assets/grid-items/1.gif", "name": "Aragorn" }],
+  "2": [{ "url": "../src/assets/grid-items/2.gif", "name": "Legolas" }],
+  "3": [{ "url": "../src/assets/grid-items/3.gif", "name": "Gimli" }],
+  "4": [{ "url": "../src/assets/grid-items/4.gif", "name": "Frodo Baggins" }],
+  "5": [{ "url": "../src/assets/grid-items/5.gif", "name": "Samwise Gamgee" }],
+  "6": [{ "url": "../src/assets/grid-items/6.gif", "name": "Pippin Took" }],
+  "7": [
+    { "url": "../src/assets/grid-items/7.gif", "name": "Merry Brandybuck" }
+  ],
+  "8": [{ "url": "../src/assets/grid-items/8.gif", "name": "Gandalf" }],
+  "9": [{ "url": "../src/assets/grid-items/9.gif", "name": "Arwen" }],
+  "10": [{ "url": "../src/assets/grid-items/10.gif", "name": "Boromir" }],
+  "11": [{ "url": "../src/assets/grid-items/11.gif", "name": "Faramir" }],
+  "12": [{ "url": "../src/assets/grid-items/12.gif", "name": "Théoden" }],
+  "13": [{ "url": "../src/assets/grid-items/13.gif", "name": "idk" }],
+  "14": [{ "url": "../src/assets/grid-items/14.gif", "name": "Éowyn Beloved" }],
+  "15": [{ "url": "../src/assets/grid-items/15.gif", "name": "Elrond" }],
+  "16": [
+    { "url": "../src/assets/grid-items/16.gif", "name": "Galadriel Bitch" }
+  ],
+  "17": [{ "url": "../src/assets/grid-items/17.gif", "name": "Gollum" }],
+  "18": [{ "url": "../src/assets/grid-items/18.gif", "name": "Bilbo Baggins" }],
+  "19": [
+    { "url": "../src/assets/grid-items/19.gif", "name": "dwarf king idk" }
+  ],
+  "20": [{ "url": "../src/assets/grid-items/20.gif", "name": "idfk" }],
+  "21": [{ "url": "../src/assets/grid-items/21.gif", "name": "idk" }],
+  "22": [{ "url": "../src/assets/grid-items/22.gif", "name": "idk" }],
+  "23": [
+    { "url": "../src/assets/grid-items/23.gif", "name": "who the hell is he" }
+  ],
+  "24": [{ "url": "../src/assets/grid-items/24.gif", "name": "idk" }],
+  "25": [{ "url": "../src/assets/grid-items/25.gif", "name": "dragon shit" }],
+  "26": [{ "url": "../src/assets/grid-items/26.gif", "name": "Saruman" }],
+  "27": [{ "url": "../src/assets/grid-items/27.gif", "name": "uruk shit" }],
+  "28": [
+    { "url": "../src/assets/grid-items/28.gif", "name": "Sauron the big loser" }
+  ],
+  "29": [{ "url": "../src/assets/grid-items/29.gif", "name": "frodo shit" }],
+  "30": [{ "url": "../src/assets/grid-items/30.gif", "name": "LOL" }]
+}
