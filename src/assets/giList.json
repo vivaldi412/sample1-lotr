@@ -8,7 +8,7 @@
   "7": [
     { "url": "../src/assets/grid-items/7.webp", "name": "Merry Brandybuck" }
   ],
-  "8": [{ "url": "../src/assets/grid-items/8.webp", "name": "Gandalf" }],
+  "8": [{ "url": "url(../src/assets/grid-items/8.webp)", "name": "Gandalf" }],
   "9": [{ "url": "../src/assets/grid-items/9.webp", "name": "Arwen" }],
   "10": [{ "url": "../src/assets/grid-items/10.webp", "name": "Boromir" }],
   "11": [{ "url": "../src/assets/grid-items/11.webp", "name": "Faramir" }],
