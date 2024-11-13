@@ -1,461 +1,679 @@
-#root {
-  /* scroll-behavior: smooth; */
-  scroll-snap-type: y mandatory;
-}
+  /* font-family: "Edu AU VIC WA NT Pre",
+  "Shadows Into Light",
+  "Satisfy",
+  "Rajdhani",
+  "Permanent Marker",
+  "Pacifico",
+  "Orbitron",
+  "Oleo Script",
+  "Micro 5",
+  "Lobster",
+  "Indie Flower",
+  "Great Vibes",
+  "Exo",
+  "Dancing Script",
+  "Changa",
+  "Caveat",
+  "Amatic SC"; */
+  #root {
+    /* scroll-behavior: smooth; */
+    /* scroll-snap-type: y mandatory; */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-p {
-  margin: 0;
-  user-select: none;
-}
 
-.main-page {
-  width: 100%;
-}
+    font-family: "Edu AU VIC WA NT Pre", "Caveat", system-ui, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
 
-.navbar {
-  margin: 1% 0 0 2%;
-  /* width: 100%; */
-  background-color: transparent;
-  display: flex;
-  justify-content: space-between;
-  font-size: 1.4rem;
-}
 
-.navbar-item {
-  text-align: center;
-  align-content: center;
-  cursor: pointer;
-  width: 135px;
-  height: 70px;
-}
 
-#logo {
-  width: 300px;
-  height: 70px;
-  margin-right: 40px;
-}
+  }
 
-/*#########################################################################*/
-.backgroundWrapper {
-  overflow: hidden;
-  position: absolute;
-  z-index: -2;
-  background: no-repeat url(./assets/lotr218.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-x: center;
-  background-origin: content-box;
-  box-sizing: content-box;
-  width: 100%;
-  height: inherit;
-  opacity: 0.4;
-}
 
-#videoWrapper {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -2;
-}
 
-#lotrHero {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  top: 0;
-  left: 0;
-  /* filter: blur(3px) brightness(130%) saturate(100%);
-  -webkit-filter: blur(3px) brightness(130%) saturate(100%);
-  -moz-filter: blur(3px) brightness(130%) saturate(100%); */
-  z-index: -1;
-  opacity: 0.5;
-}
 
-.hero {
-  scroll-snap-align: start;
-  position: relative;
-  box-sizing: border-box;
-  /* width: 100%; */
-  /* max-height: min-content; */
-  border: 6px solid white;
-  height: 80vh;
-  /*background: no-repeat url(./assets/lotr-hero.mp4);
-  background-repeat: no-repeat;
-  background-size: cover; */
-  /* filter: blur(4px) brightness(50%) saturate(40%);
-  -webkit-filter: blur(4px) brightness(50%) saturate(40%);
-  -moz-filter: blur(4px) brightness(50%) saturate(40%); */
-}
 
-.hero-items {
-  user-select: none;
-  position: relative;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  margin-top: 130px;
-}
 
-.bridge {
-  /* width: 100%; */
-  border: 6px solid white;
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-}
 
-.bridge-items-wrapper {
-  display: flex;
-  justify-content: space-evenly;
-  justify-self: center;
-  padding-bottom: 15px;
-}
 
-.bridge-items {
-  position: relative;
-  /* background-color: #f5f5f5; */
-  width: 335px;
-  height: 280px;
-  border-bottom: 2px solid #f5f5f5;
-  box-shadow: #f5f5f59c 0px 0px 0px 1px;
-  overflow: clip;
-  overflow-clip-margin: border-box 2px;
-}
 
-#bi1 {
-  width: inherit;
-  height: inherit;
-  transition: all 300ms;
-  background: no-repeat url(./assets/Ewoyn/ewoyn9.jpg);
-  background-repeat: no-repeat;
-  background-size: 213%;
-  background-position-x: 100%;
-}
 
-#bi2 {
-  width: inherit;
-  height: inherit;
-  transition: all 300ms;
-  background: no-repeat url(./assets/Ewoyn/ewoyn12.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p {
+    margin: 0;
+    user-select: none;
+  }
 
-#bi3 {
-  width: inherit;
-  height: inherit;
-  transition: all 300ms;
-  background: no-repeat url(./assets/Ewoyn/ewoyn10.jpg);
-  background-repeat: no-repeat;
-  background-size: 300%;
-  background-position: 53% 32%;
-}
+  .main-page {
+    width: 100%;
+  }
 
-.second-section {
-  scroll-snap-align: center;
-  position: relative;
-  box-sizing: content-box;
-  overflow: hidden;
-  /* width: 100%; */
-  position: relative;
-  border: 6px solid white;
-  height: 855px;
-}
+  .navbar {
+    font-family: "Orbitron",
+      system-ui,
+      sans-serif;
 
-.third-section {
-  scroll-snap-align: center;
-  position: relative;
-  box-sizing: content-box;
-  overflow: hidden;
-  /* width: 100%; */
-  height: 855px;
-  border: 6px solid white;
-}
+    margin: 1% 0 0 1%;
+    /* width: 100%; */
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+  }
 
-.second-bridge {
-  scroll-snap-align: center;
-  position: relative;
-  box-sizing: content-box;
-  overflow: hidden;
-  /* width: 100%; */
-  height: 688px;
-  border: 6px solid white;
-}
+  .navbar-item {
+    text-align: center;
+    align-content: center;
+    cursor: pointer;
+    width: 135px;
+    height: 70px;
+  }
 
-.fourth-section {
-  scroll-snap-align: center;
-  position: relative;
-  box-sizing: content-box;
-  overflow: hidden;
-  /* width: 100%; */
-  height: 855px;
-  border: 6px solid white;
-}
+  #logo {
+    width: 300px;
+    height: 70px;
+    margin-right: 40px;
+  }
 
-.end-section {
-  scroll-snap-align: center;
-  position: relative;
-  box-sizing: content-box;
-  overflow: hidden;
-  /* width: 100%; */
-  height: 855px;
-  border: 6px solid white;
-}
+  /*#########################################################################*/
+  .backgroundWrapper {
+    overflow: hidden;
+    position: absolute;
+    z-index: -2;
+    background: linear-gradient(180deg, hsla(0, 0%, 0%, 1) 0%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 40%, hsla(0, 0%, 0%, 1) 100%), url(./assets/lotr218.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-origin: content-box;
+    box-sizing: content-box;
+    width: 100%;
+    height: inherit;
+    opacity: 0.4;
+  }
 
-/*##################################################################################*/
-#heroh1d {
-  display: inline;
-  background-image: url(./assets/gradient.png);
-  background-repeat: no-repeat;
-  background-origin: content-box;
-  background-position: 264% -15%;
-  transition: all 1s;
-}
+  #bW3 {
+    background: linear-gradient(180deg, hsla(0, 0%, 0%, 1) 0%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 80%, hsla(0, 0%, 0%, 1) 100%),
+      url(/src/assets/lotr216.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-origin: content-box;
+  }
 
-#heroh1d:hover {
-  background-position: 160% -15%;
-}
+  #bW4 {
+    background: linear-gradient(180deg, hsla(0, 0%, 0%, 1) 0%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 80%, hsla(0, 0%, 0%, 1) 100%),
+      url(/src/assets/lotr213.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-origin: content-box;
+    opacity: 0.6;
+  }
 
-#heroh23d {
-  display: inline;
-  background-image: url(./assets/gradient.png);
-  background-repeat: no-repeat;
-  background-origin: content-box;
-  background-position: 296% -15.5%;
-}
 
-/*----------------------*/
-.bridge-items:hover {
-  border-bottom: 4px solid #fca311;
-  box-shadow: #f5f5f5 0px -1px 0px 1.5px;
+  #bWE {
+    background: url(/src/assets/lotr214.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-origin: content-box;
+    background-position-y: 90%;
+    opacity: 1;
+  }
 
-  #bi1,
-  #bi2,
+  #videoWrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 80%, hsla(0, 0%, 0%, 1) 100%);
+  }
+
+  #lotrHero {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.5;
+  }
+
+  .hero {
+    top: -20px;
+    scroll-snap-align: start;
+    position: relative;
+    box-sizing: border-box;
+    height: 80vh;
+  }
+
+  .hero-items {
+    letter-spacing: .2rem;
+    left: -350px;
+    user-select: none;
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 230px;
+  }
+
+  .bridge {
+    top: -155px;
+    position: relative;
+    /* width: 100%; */
+    /* border: 6px solid white; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+
+  #bridge-title {
+    width: max-content;
+    border: 2px solid #fca21100;
+    padding: 11px 0px 15px 0px;
+    transition: all 500ms;
+    font-size: 0.8rem;
+    margin: 0px 0px 15px 485px;
+    cursor: pointer;
+    overflow: visible;
+  }
+
+  #bridge-title:hover {
+    padding-right: 15px;
+    border-top: 2px solid #fca2110a;
+    border-bottom: 2px solid #fca2117e;
+    transform: translate(2px, 3px);
+  }
+
+  .bridge-items-wrapper {
+    display: flex;
+    justify-content: center;
+    /* justify-self: center; */
+    padding-bottom: 15px;
+    column-gap: 30px;
+  }
+
+  .bridge-items {
+
+    position: relative;
+    /* background-color: #f5f5f5; */
+    width: 290px;
+    height: 260px;
+    border-bottom: 4px solid #f5f5f5;
+    box-shadow: #f5f5f59c 0px 0px 0px 2px;
+    overflow: clip;
+    overflow-clip-margin: border-box 2px;
+    text-shadow: 2px -2px 20px rgba(0, 0, 0, 1);
+    /* color: #dbd9f3; */
+
+    h2 {
+      backdrop-filter: blur(10px);
+      font-size: 2rem;
+      margin-bottom: 20px;
+      padding: 6px 2px;
+      /* transition: all 1s; */
+    }
+  }
+
+  #bi1 {
+    width: inherit;
+    height: inherit;
+    transition: all 300ms;
+    background: no-repeat url(./assets/Ewoyn/ewoyn9.jpg);
+    background-repeat: no-repeat;
+    background-size: 213%;
+    background-position-x: 100%;
+    filter: brightness(70%) contrast(100%);
+    -webkit-filter: brightness(70%) contrast(100%);
+    -moz-filter: brightness(70%) contrast(100%);
+  }
+
+  #bi2 {
+    width: inherit;
+    height: inherit;
+    transition: all 300ms;
+    background: no-repeat url(./assets/Ewoyn/ewoyn12.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(70%) contrast(100%);
+    -webkit-filter: brightness(70%) contrast(100%);
+    -moz-filter: brightness(70%) contrast(100%);
+  }
+
   #bi3 {
-    transform: scale(1.05) translateY(-8px);
-    filter: brightness(85%) opacity(70%);
-    -webkit-filter: brightness(85%) opacity(70%);
-    -moz-filter: brightness(85%) opacity(70%);
+    width: inherit;
+    height: inherit;
+    transition: all 300ms;
+    background: no-repeat url(./assets/Ewoyn/ewoyn10.jpg);
+    background-repeat: no-repeat;
+    background-size: 300%;
+    background-position: 53% 32%;
+    filter: brightness(70%) contrast(100%);
+    -webkit-filter: brightness(70%) contrast(100%);
+    -moz-filter: brightness(70%) contrast(100%);
+  }
+
+  .second-section {
+    top: -170px;
+    scroll-snap-align: center;
+    position: relative;
+    box-sizing: content-box;
+    overflow: hidden;
+    /* width: 100%; */
+    position: relative;
+    /* border: 6px solid white; */
+    height: 900px;
+  }
+
+  .third-section {
+    top: -50px;
+    scroll-snap-align: center;
+    position: relative;
+    box-sizing: content-box;
+    overflow: hidden;
+    /* width: 100%; */
+    height: 930px;
+    /* border: 6px solid white; */
+  }
+
+  .second-bridge {
+    scroll-snap-align: center;
+    position: relative;
+    box-sizing: content-box;
+    overflow: hidden;
+    /* width: 100%; */
+    height: 688px;
+    /* border: 6px solid white; */
+  }
+
+  .fourth-section {
+    scroll-snap-align: center;
+    position: relative;
+    box-sizing: content-box;
+    overflow: hidden;
+    /* width: 100%; */
+    height: 1100px;
+    /* border: 6px solid white; */
+  }
+
+  .end-section {
+    position: relative;
+
+    width: 100%;
+    top: 100px;
+    scroll-snap-align: center;
+    position: relative;
+    box-sizing: content-box;
+    overflow: hidden;
+
+    height: 400px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    margin-bottom: 200px;
+  }
+
+  /*##################################################################################*/
+  #heroh1d {
+    display: inline;
+    background-image: url(./assets/gradient.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-position: 240% -12%;
+    transition: all 1s;
+  }
+
+  #heroh1d:hover {
+    background-position: 160% -12%;
+  }
+
+  #heroh23d {
+    margin-top: 5%;
+    display: inline;
+    background-image: url(./assets/gradient.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-position: 255% -13.5%;
+  }
+
+  /*----------------------*/
+  .bridge-items:hover {
+    border-bottom: 4px solid #fca311;
+    box-shadow: #f5f5f5 0px -1px 0px 1.5px;
+
+    #bi1,
+    #bi2,
+    #bi3 {
+      transform: scale(1.05) translateY(-8px);
+      filter: brightness(85%) contrast(70%) opacity(50%);
+      -webkit-filter: brightness(85%) contrast(70%) opacity(50%);
+      -moz-filter: brightness(85%) contrast(70%) opacity(50%);
+    }
+
+    .bit {
+      backdrop-filter: blur(0px);
+      top: 22px;
+    }
   }
 
   .bit {
-    top: 35px;
-  }
-}
-
-.bit {
-  position: absolute;
-  top: 198px;
-  left: 20px;
-  transition: all 500ms 100ms;
-}
-
-#drop-down {
-  opacity: 0;
-  position: absolute;
-  top: 17%;
-  left: 10%;
-  width: inherit;
-  height: inherit;
-  transition: all 100ms;
-
-  #dp-self {
-    width: 89%;
-    height: 65%;
-    border-top: 2px solid #f5f5f5;
-    border-left: 2px solid #f5f5f5;
-    border-right: 2px solid #f5f5f5;
-    border-radius: 6px 6px 0px 0px;
-    background-color: #f5f5f557;
+    position: absolute;
+    top: 200px;
+    left: 20px;
+    transition: all 500ms 100ms;
   }
 
-  #dp-item {
-    padding: 3px 6px 4px 5px;
-    display: flex;
-    font-size: 1rem;
+  #drop-down {
+    opacity: 0;
+    position: absolute;
+    top: 17%;
+    left: 10%;
     width: inherit;
     height: inherit;
-    border: 2px solid #f5f5f5;
-    border-radius: 0px 6px 6px 6px;
-    background-color: #f5f5f557;
-    flex-direction: column;
-    align-items: flex-start;
-    transition: all 500ms;
-    text-align: start;
+    transition: all 100ms;
+
+    #dp-self {
+      width: 89%;
+      height: 65%;
+      border-top: 2px solid #f5f5f5;
+      border-left: 2px solid #f5f5f5;
+      border-right: 2px solid #f5f5f5;
+      border-radius: 6px 6px 0px 0px;
+      background-color: #f5f5f557;
+    }
+
+    #dp-item {
+      padding: 3px 33px 4px 5px;
+      display: flex;
+      font-size: 1rem;
+      width: inherit;
+      height: inherit;
+      border: 2px solid #f5f5f5;
+      border-radius: 0px 6px 6px 6px;
+      background-color: #f5f5f557;
+      flex-direction: column;
+      align-items: flex-start;
+      transition: all 500ms;
+      text-align: start;
+    }
+
+    #dp-item>p {
+      width: 130%;
+    }
+
+    #dp-item>p:hover {
+      padding-left: 3%;
+    }
   }
 
-  #dp-item>p {
-    width: 100%;
+  .navbar-item:hover {
+    #drop-down {
+      opacity: 1;
+    }
   }
 
-  #dp-item>p:hover {
-    padding-left: 3%;
-  }
-}
-
-.navbar-item:hover {
-  #drop-down {
-    opacity: 1;
-  }
-}
-
-/*----------------------*/
-.second-section-items {
-  position: absolute;
-  top: 300px;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-
-  h1 {
-    margin-top: -50px;
-    font-size: 5.7rem;
-    text-wrap-mode: nowrap;
-  }
-
-  h2 {
-    font-size: 5rem;
-    color: #f5f5f57a;
-  }
-
-  div {
-    width: 10%;
-    height: 4px;
-    background-color: #fca311;
-    margin-bottom: 30px;
-  }
-
-  p {
-    width: 80%;
-    font-size: 1.3rem;
-  }
-
-  #button {
-    cursor: pointer;
-    width: 200px;
-    height: 60px;
+  /*----------------------*/
+  .second-section-items {
+    position: absolute;
+    top: 478px;
+    left: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    background-color: transparent;
-    border: 3px solid #f5f5f55c;
-    margin: 20px 0px 0px 0px;
-    transition: all 200ms;
-    border-radius: 4px;
+    text-align: center;
 
-    #bp {
-      color: #f5f5f5;
-      width: auto;
+    h1 {
+      margin-top: -50px;
+      font-size: 5.7rem;
+      text-wrap-mode: nowrap;
+    }
+
+    h2 {
+      font-size: 5rem;
+      color: #f5f5f57a;
+    }
+
+    #line {
+      width: 10%;
+      height: 4px;
+      background-color: #fca311;
+      margin-bottom: 30px;
+    }
+
+    p {
+      width: 80%;
       font-size: 1.3rem;
     }
 
+    #button {
+      cursor: pointer;
+      width: 200px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+      border: 3px solid #f5f5f55c;
+      margin: 20px 0px 0px 0px;
+      transition: all 200ms;
+      border-radius: 4px;
+
+      #bp {
+        color: #f5f5f5;
+        width: auto;
+        font-size: 1.3rem;
+      }
+
+    }
+
+    #button:hover {
+      border: 3px solid #fca311;
+      transform: translateY(-3px);
+    }
   }
 
-  #button:hover {
-    border: 3px solid #fca311;
-    transform: translateY(-3px);
-  }
-}
-
-.scroll2,
-.scroll3 {
-  position: relative;
-  top: 180px;
-  opacity: 0;
-}
-
-/*----------------------*/
-.gridItems {
-  position: relative;
-  /* background: hsla(0, 0%, 0%, 1); */
-
-  /* background: linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 0%, 100%, 1) 50%, hsla(0, 0%, 0%, 1) 100%); */
-  width: 87%;
-  margin-top: 23px;
-  display: grid;
-  grid-auto-flow: column;
-  grid-column-gap: 10px;
-  overflow: hidden;
-
-  align-items: center;
-  align-content: center;
-
-}
-
-#gridItemsBG {
-  width: 160px;
-  height: 156px;
-  position: absolute;
-  background: linear-gradient(90deg, hsla(0, 0%, 0%, 1) 20%, rgba(255, 255, 255, 0) 100%);
-  z-index: 2;
-}
-
-#gridItemsBGB {
-  right: 0px;
-  width: 160px;
-  height: 156px;
-  position: absolute;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, hsla(0, 0%, 0%, 1) 60%);
-  z-index: 2;
-}
-
-
-
-
-.grid-d,
-.grid-d2,
-.grid-d3,
-.grid-d4 {
-  cursor: pointer;
-  position: relative;
-  width: 190px;
-  height: 150px;
-  border: 4px solid #f5f5f523;
-  /* background-image: url(./assets/grid-items/1.gif);
-  background-repeat: no-repeat;
-  background-origin: border-box; */
-  overflow: hidden;
-  transition: all 500ms;
-
-
-  img {
-    width: 100%;
-    height: 190%;
-    transform: translateY(-59px);
-    filter: brightness(75%) saturate(90%);
+  .scroll2,
+  .scroll3,
+  .scroll4,
+  .scroll5 {
+    position: relative;
+    top: 180px;
+    opacity: 0;
   }
 
-  p {
+  /*----------------------*/
+  .gridItems {
+    position: relative;
+    width: 87%;
+    margin-top: 23px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 10px;
+    overflow: hidden;
+
+    align-items: center;
+    align-content: center;
+
+  }
+
+  #gridItemsBG {
+    width: 160px;
+    height: 156px;
     position: absolute;
-    top: 150px;
-    left: 0px;
+    background: linear-gradient(90deg, hsla(0, 0%, 0%, 1) 20%, rgba(255, 255, 255, 0) 100%);
+    z-index: 2;
+  }
+
+  #gridItemsBGB {
+    right: 0px;
+    width: 160px;
+    height: 156px;
+    position: absolute;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, hsla(0, 0%, 0%, 1) 60%);
+    z-index: 2;
+  }
+
+
+
+
+  .grid-d,
+  .grid-d2,
+  .grid-d3,
+  .grid-d4 {
+    cursor: pointer;
+    position: relative;
+    width: 190px;
+    height: 150px;
+    border: 4px solid #f5f5f523;
+    overflow: hidden;
     transition: all 500ms;
-    color: #f5f5f5;
-    font-size: 1.6rem;
-    text-decoration: underline;
-    /* text-shadow: rgb(0 0 0) 6px -4px 13px, rgb(0 0 0) 1px -13px 13px; */
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.568) 30%);
-    padding: 0px 200px 100px 10px;
-    /* text-indent: 2em; */
-    white-space: break-spaces;
-  }
-}
 
-.grid-d:hover,
-.grid-d2:hover,
-.grid-d3:hover,
-.grid-d4:hover {
-  border: 4px solid #fca311;
 
-  .gip {
-    top: 30px;
+    img {
+      width: 100%;
+      height: 190%;
+      transform: translateY(-59px);
+      filter: brightness(75%) saturate(90%);
+    }
+
+    p {
+      position: absolute;
+      top: 150px;
+      left: 0px;
+      transition: all 500ms;
+      color: #f5f5f5;
+      font-size: 1.6rem;
+      text-decoration: underline;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.568) 30%);
+      padding: 0px 200px 100px 10px;
+      white-space: break-spaces;
+    }
   }
-}
+
+  .grid-d:hover,
+  .grid-d2:hover,
+  .grid-d3:hover,
+  .grid-d4:hover {
+    border: 4px solid #fca311;
+
+    .gip {
+      top: 30px;
+    }
+  }
+
+  .giw1,
+  .giw2,
+  .giw3,
+  .giw4 {
+    display: flex;
+  }
+
+  /*----------------------*/
+
+
+  #secp1 {
+    background-image: url(./assets/section/sec1.jpeg);
+    width: 398px;
+    height: 387px;
+    left: 77%;
+    top: -60%;
+
+  }
+
+  #secp2 {
+    background-image: url(./assets/section/sec2.png);
+    width: 903px;
+    height: 441px;
+    top: 15%;
+    left: 45%;
+    filter: brightness(80%) saturate(90%) opacity(40%);
+  }
+
+  #secp3 {
+    width: 300px;
+    height: 260px;
+    background-image: url(./assets/section/sec3.png);
+    left: 3%;
+    top: 10%;
+    filter: brightness(80%) saturate(90%) opacity(40%);
+  }
+
+  #secp4 {
+    background-image: url(./assets/section/sec4.png);
+    width: 748px;
+    height: 330px;
+    top: -63%;
+    left: 12%;
+  }
+
+  .insetS {
+    border-radius: 6px;
+    transform: translateY(50%);
+    filter: brightness(80%) saturate(40%) opacity(70%);
+    opacity: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-size: contain;
+    z-index: -1;
+    /* box-shadow: 0px 0px 30px 15px rgba(0, 0, 0, 1) inset; */
+  }
+
+  /*----------------------*/
+  #end-section-items {
+    top: 55px;
+    left: 35px;
+
+
+    p {
+      width: 80%;
+      font-size: 1.3rem;
+    }
+
+    h1 {
+      margin-top: -50px;
+      font-size: 4.7rem;
+      text-wrap-mode: nowrap;
+    }
+
+    h2 {
+      font-size: 4rem;
+      color: #f5f5f57a;
+    }
+
+
+  }
+
+  #arman-box {
+    opacity: 0.7;
+    transition: all 300ms;
+  }
+
+  #arman-box:hover {
+    opacity: 1;
+  }
+
+  .arman {
+    font: 500 3.8rem "Edu AU VIC WA NT Pre";
+    fill: #a5a38c;
+    /* fill: #a5a38c; */
+    stroke-linecap: "round";
+    stroke-linejoin: "round";
+    paint-order: stroke;
+    stroke: #aa7b31;
+    /* stroke: #aa7b31; */
+    stroke-width: 10;
+  }
+
+
+  #arman2 {
+    font: 600 4rem "Edu AU VIC WA NT Pre";
+  }
+
+  #arman2A {
+    font: 600 5rem "Edu AU VIC WA NT Pre";
+  }
