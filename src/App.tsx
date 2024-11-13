@@ -185,10 +185,10 @@ export default function App() {
     for (let i = 0; i < text.length; i++) {
       if (id === "arman2" && i === 0) {
         // @ts-ignore
-        temp.push(<a href="https://github.com/vivaldi412" target="_blank"><text key={nanoid()} id={id + 'A'} className="arman" x={40 + space[i]} y={y}>{text[i]}</text></a>)
+        temp.push(<a key={nanoid()} href="https://github.com/vivaldi412" target="_blank"><text id={id + 'A'} className="arman" x={40 + space[i]} y={y}>{text[i]}</text></a>)
       }
       else {
-        temp.push(<a href="https://github.com/vivaldi412" target="_blank"><text key={nanoid()} id={id} className="arman" x={40 + space[i]} y={y}>{text[i]}</text></a>)
+        temp.push(<a key={nanoid()} href="https://github.com/vivaldi412" target="_blank"><text id={id} className="arman" x={40 + space[i]} y={y}>{text[i]}</text></a>)
       }
     }
     return temp
