@@ -23,7 +23,36 @@ import gilist from "./assets/giList.json"
 // import sec2 from "./assets/section/sec2.png"
 // import sec3 from "./assets/section/sec3.png"
 // import sec4 from "./assets/section/sec4.png"
-
+import git1 from "../src/assets/grid-items/1.webp"
+import git2 from "./assets/grid-items/2.webp"
+import git3 from "./assets/grid-items/3.webp"
+import git4 from "./assets/grid-items/4.webp"
+import git5 from "./assets/grid-items/5.webp"
+import git6 from "./assets/grid-items/6.webp"
+import git7 from "./assets/grid-items/7.webp"
+import git8 from "./assets/grid-items/8.webp"
+import git9 from "./assets/grid-items/9.webp"
+import git10 from "./assets/grid-items/10.webp"
+import git11 from "./assets/grid-items/11.webp"
+import git12 from "./assets/grid-items/12.webp"
+import git13 from "./assets/grid-items/13.webp"
+import git14 from "./assets/grid-items/14.webp"
+import git15 from "./assets/grid-items/15.webp"
+import git16 from "./assets/grid-items/16.webp"
+import git17 from "./assets/grid-items/17.webp"
+import git18 from "./assets/grid-items/18.webp"
+import git19 from "./assets/grid-items/19.webp"
+import git20 from "./assets/grid-items/20.webp"
+import git21 from "./assets/grid-items/21.webp"
+import git22 from "./assets/grid-items/22.webp"
+import git23 from "./assets/grid-items/23.webp"
+import git24 from "./assets/grid-items/24.webp"
+import git25 from "./assets/grid-items/25.webp"
+import git26 from "./assets/grid-items/26.webp"
+import git27 from "./assets/grid-items/27.webp"
+import git28 from "./assets/grid-items/28.webp"
+import git29 from "./assets/grid-items/29.webp"
+import git30 from "./assets/grid-items/30.webp"
 
 
 // "grid-d"
@@ -36,6 +65,14 @@ export default function App() {
   const grid4 = React.useRef<any>(aaa("grid-d4"));
   const vivladiRef = React.useRef(theText("VIVALDI412", "68", "arman1", [0, 40, 65, 100, 140, 182, 230, 248, 274, 282]));
   const armanRef = React.useRef(theText("Arman", "115", "arman2", [-2.9, 58, 108, 185, 235]));
+
+
+  // console.log(gilist[1][0].url.charCodeAt(0), gilist[1][0].url.charCodeAt(1), gilist[1][0].url.charCodeAt(2), gilist[1][0].url.charCodeAt(3))
+  // console.log(Object(gilist[1][0].url))
+  // console.log(RegExp(gilist[1][0].url))
+  // console.log(Array(gilist[1][0].url)) "../src/assets/grid-items/1.webp"
+
+
 
   function aaa(className: string) {
     function getRandomIntInclusive(min: number, max: number) {

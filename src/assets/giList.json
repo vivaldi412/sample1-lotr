@@ -1,6 +1,6 @@
 {
   "1": [{ "url": "../src/assets/grid-items/1.webp", "name": "Aragorn" }],
-  "2": [{ "url": "../src/assets/grid-items/2.webp", "name": "Legolas" }],
+  "2": [{ "url": "./assets/grid-items/2.webp", "name": "Legolas" }],
   "3": [{ "url": "../src/assets/grid-items/3.webp", "name": "Gimli" }],
   "4": [{ "url": "../src/assets/grid-items/4.webp", "name": "Frodo Baggins" }],
   "5": [{ "url": "../src/assets/grid-items/5.webp", "name": "Samwise Gamgee" }],
@@ -8,9 +8,7 @@
   "7": [
     { "url": "../src/assets/grid-items/7.webp", "name": "Merry Brandybuck" }
   ],
-  "8": [
-    { "url": "href=url(../src/assets/grid-items/8.webp)", "name": "Gandalf" }
-  ],
+  "8": [{ "url": "../src/assets/grid-items/8.webp", "name": "Gandalf" }],
   "9": [{ "url": "../src/assets/grid-items/9.webp", "name": "Arwen" }],
   "10": [{ "url": "../src/assets/grid-items/10.webp", "name": "Boromir" }],
   "11": [{ "url": "../src/assets/grid-items/11.webp", "name": "Faramir" }],
