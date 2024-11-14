@@ -72,7 +72,7 @@ export default function App() {
   // console.log(RegExp(gilist[1][0].url))
   // console.log(Array(gilist[1][0].url)) "../src/assets/grid-items/1.webp"
 
-  import(git1).then((result) => console.log(result.default))
+  import(gilist[1][0].url).then((res) => res)
 
   function aaa(className: string) {
     function getRandomIntInclusive(min: number, max: number) {
@@ -88,7 +88,7 @@ export default function App() {
       temp.push(
         // @ts-ignore
 
-        <div className={className} id={"gi" + i} key={nanoid()}><img src={"/" + gilist[j][0].url} /><p className="gip">{gilist[j][0].name}</p></div>
+        <div className={className} id={"gi" + i} key={nanoid()}><img src={import(gilist[j][0].url).then((res) => res.default)} /><p className="gip">{gilist[j][0].name}</p></div>
 
         // <div className={name} id={"gi" + i} key={nanoid()}></div>
       )
