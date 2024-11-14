@@ -23,7 +23,7 @@ import gilist from "./assets/giList.json"
 // import sec2 from "./assets/section/sec2.png"
 // import sec3 from "./assets/section/sec3.png"
 // import sec4 from "./assets/section/sec4.png"
-import git1 from "../src/assets/grid-items/1.webp"
+import git1 from "./assets/grid-items/1.webp"
 import git2 from "./assets/grid-items/2.webp"
 import git3 from "./assets/grid-items/3.webp"
 import git4 from "./assets/grid-items/4.webp"
@@ -72,7 +72,7 @@ export default function App() {
   // console.log(RegExp(gilist[1][0].url))
   // console.log(Array(gilist[1][0].url)) "../src/assets/grid-items/1.webp"
 
-
+  import(git1).then((result) => console.log(result.default))
 
   function aaa(className: string) {
     function getRandomIntInclusive(min: number, max: number) {
@@ -88,7 +88,7 @@ export default function App() {
       temp.push(
         // @ts-ignore
 
-        <div className={className} id={"gi" + i} key={nanoid()}><img src={gilist[j][0].url} /><p className="gip">{gilist[j][0].name}</p></div>
+        <div className={className} id={"gi" + i} key={nanoid()}><img src={"/" + gilist[j][0].url} /><p className="gip">{gilist[j][0].name}</p></div>
 
         // <div className={name} id={"gi" + i} key={nanoid()}></div>
       )
@@ -109,7 +109,7 @@ export default function App() {
         // console.log("sum=", sum, "res=", res, "same=", same, "j=", j)
         temp.push(
           // @ts-ignore
-          <div className={className} id={"gi" + (i + 60)} key={nanoid()}><img src={gilist[same][0].url} /><p className="gip">{gilist[same][0].name}</p></div>
+          <div className={className} id={"gi" + (i + 60)} key={nanoid()}><img src={"/" + gilist[same][0].url} /><p className="gip">{gilist[same][0].name}</p></div>
           // <div className={name} id={"gi" + i} key={nanoid()}></div>
         )
       }
