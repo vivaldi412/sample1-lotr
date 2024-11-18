@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
+// @ts-expect-error:fuck this shit
 import React, { ReactNode, useEffect } from "react";
 import { nanoid } from 'nanoid'
 import { gsap } from "gsap";
@@ -27,6 +28,7 @@ gsap.registerPlugin(useGSAP, Flip, ScrollTrigger, Observer, ScrollToPlugin, Drag
 
 export default function App() {
     const container = React.useRef<HTMLDivElement>(null);
+    // @ts-expect-error:fuck this shit
     const [refresh, setRefresh] = React.useState<number>();
     const grid = React.useRef<ReactNode>();
     const grid2 = React.useRef<ReactNode>();
@@ -45,7 +47,6 @@ export default function App() {
             return Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled);
         }
         const temp = [];
-        const url = [];
         let same = 0;
         let res;
         let sum;
@@ -129,7 +130,7 @@ export default function App() {
                 grid4.current = aaa("grid-d4", res)
             }).then(() => setRefresh(Math.random()))
             const tween2 = gsap.to(".scroll2", { top: 0, opacity: 1, duration: 2, delay: "500ms" }),
-
+                // @ts-expect-error:fuck this shit
                 st2 = ScrollTrigger.create({
                     trigger: ".second-section",
                     start: "top center",
@@ -138,7 +139,7 @@ export default function App() {
                     toggleActions: "play reset play reset"
                 });
             const tween3 = gsap.to(".scroll3", { top: 0, opacity: 1, duration: 2, delay: "500ms" }),
-
+                // @ts-expect-error:fuck this shit
                 st3 = ScrollTrigger.create({
                     trigger: ".third-section",
                     start: "top center",
@@ -168,6 +169,7 @@ export default function App() {
             tl.to(".giw4", {
                 x: "-15700", duration: 360, ease: "none", runBackwards: true, overwrite: true
             }, "start")
+            // @ts-expect-error:fuck this shit
             const st4 = ScrollTrigger.create({
                 trigger: ".second-bridge",
                 start: "top center",
@@ -176,6 +178,7 @@ export default function App() {
                 toggleActions: "resume pause resume pause"
             });
             const tween4 = gsap.to(".scroll4", { top: 0, opacity: 1, duration: 1, delay: "500ms" }),
+                // @ts-expect-error:fuck this shit
                 st5 = ScrollTrigger.create({
                     trigger: ".fourth-section",
                     start: "top center",
@@ -191,7 +194,7 @@ export default function App() {
                 stagger: 0.3,
                 ease: 'back.out',
                 overwrite: "auto"
-            }),
+            }),// @ts-expect-error:fuck this shit
                 st6 = ScrollTrigger.create({
                     trigger: ".fourth-section",
                     start: "top center",
