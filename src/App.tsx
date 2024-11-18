@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-// @ts-expect-error:fuck this shit
+
 import React, { ReactNode, useEffect } from "react";
 import { nanoid } from 'nanoid'
 import { gsap } from "gsap";
@@ -24,18 +24,18 @@ import gilist from "./assets/giList.json"
 gsap.registerPlugin(useGSAP, Flip, ScrollTrigger, Observer, ScrollToPlugin, Draggable, MotionPathPlugin, EaselPlugin, PixiPlugin, TextPlugin, RoughEase, ExpoScaleEase, SlowMo, CustomEase);
 
 
-// "grid-d"
 
 export default function App() {
     const container = React.useRef<HTMLDivElement>(null);
-    // @ts-expect-error:fuck this shit
-    const [refresh, setRefresh] = React.useState<number>();
+    const [refresh, setRefresh] = React.useState<number>(0);
     const grid = React.useRef<ReactNode>();
     const grid2 = React.useRef<ReactNode>();
     const grid3 = React.useRef<ReactNode>();
     const grid4 = React.useRef<ReactNode>();
     const vivladiRef = React.useRef(theText("VIVALDI412", "68", "arman1", [0, 40, 65, 100, 140, 182, 230, 248, 274, 282]));
     const armanRef = React.useRef(theText("Arman", "115", "arman2", [-2.9, 58, 108, 185, 235]));
+    const tla = React.useRef<gsap.core.Timeline>(gsap.timeline({ paused: true, smoothChildTiming: true }));
+
 
 
 
@@ -116,19 +116,27 @@ export default function App() {
         return temp
     }
     function armanAnimF() {
-        tla.play(0)
+        tla.current.play(0);
     }
 
-    const tla = gsap.timeline({ paused: true, smoothChildTiming: true });
-    useGSAP(
-        () => {
+    useEffect(() => {
+
+        if (refresh === 0) {
             setIndex2().then(res => {
                 console.log("done")
                 grid.current = aaa("grid-d", res)
                 grid2.current = aaa("grid-d2", res)
                 grid3.current = aaa("grid-d3", res)
                 grid4.current = aaa("grid-d4", res)
-            }).then(() => setRefresh(Math.random()))
+            }).then(() => setRefresh(5))
+        }
+    }, [refresh])
+    useGSAP(
+        () => {
+
+
+
+
             const tween2 = gsap.to(".scroll2", { top: 0, opacity: 1, duration: 2, delay: "500ms" }),
                 // @ts-expect-error:fuck this shit
                 st2 = ScrollTrigger.create({
@@ -156,7 +164,8 @@ export default function App() {
                 }
             });
             tl.addLabel("start", 0);
-            tl.clear()
+
+            // tl.clear()
             tl.to(".giw1", {
                 x: "-15700", duration: 360, ease: "none", overwrite: true
             }, "start")
@@ -202,7 +211,8 @@ export default function App() {
                     animation: tween5,
                     toggleActions: "play pause play reset"
                 });
-            tla.to("#arman1", {
+
+            tla.current.to("#arman1", {
                 fill: "#f5f5f5",
                 stroke: "#fca211",
                 y: 0,
@@ -212,7 +222,7 @@ export default function App() {
                 duration: 0.5,
                 stagger: 0.05
             });
-            tla.to("#arman2A", {
+            tla.current.to("#arman2A", {
                 fill: "#f5f5f5",
                 stroke: "#fca211",
                 y: 0,
@@ -221,7 +231,7 @@ export default function App() {
                 ease: "back.out(10)",
                 duration: 0.5
             }, ">-70%");
-            tla.to("#arman2", {
+            tla.current.to("#arman2", {
                 fill: "#f5f5f5",
                 stroke: "#fca211",
                 y: 0,
@@ -233,7 +243,7 @@ export default function App() {
             }, ">-80%");
 
 
-            tla.to("#arman1", {
+            tla.current.to("#arman1", {
                 fill: "#a5a38c",
                 stroke: "#aa7b31",
                 y: 0,
@@ -242,7 +252,7 @@ export default function App() {
                 duration: 6,
                 delay: 3
             });
-            tla.to("#arman2A", {
+            tla.current.to("#arman2A", {
                 fill: "#a5a38c",
                 stroke: "#aa7b31",
                 y: 0,
@@ -250,7 +260,7 @@ export default function App() {
                 opacity: 1,
                 duration: 3
             }, "-=5");
-            tla.to("#arman2", {
+            tla.current.to("#arman2", {
                 fill: "#a5a38c",
                 stroke: "#aa7b31",
                 y: 0,
@@ -262,9 +272,8 @@ export default function App() {
 
 
         },
-        { dependencies: [container], scope: container }
+        { scope: container }
     );
-    // 
 
 
 
